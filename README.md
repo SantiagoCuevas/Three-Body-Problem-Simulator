@@ -1,1 +1,1 @@
-# Three-Body-Problem-Simulator
+Three-Body-Problem-Simulator
