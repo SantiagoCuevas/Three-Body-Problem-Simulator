@@ -4,7 +4,8 @@ export interface Body {
   displayName: string;
   radius: number;
   mass: number;
-  velocity: number;
+  velocity: Vector3;
+  acceleration: Vector3;
   color: string;
   position: Vector3;
 }

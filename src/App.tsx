@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div id="canvas-container">
-        <Canvas camera={{ fov: 75, position: [0, 0, 20] }}>
+        <Canvas camera={{ fov: 75, position: [0, 0, 200] }}>
           <CameraController />
           <color attach="background" args={["#131"]} />
           <ambientLight intensity={0.1} />
