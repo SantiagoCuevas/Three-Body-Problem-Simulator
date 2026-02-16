@@ -1,6 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import "./App.css";
 import { CameraController } from "./components/CameraController";
+import { Simulation } from "./components/Simulation";
 
 function App() {
   return (
@@ -10,11 +11,8 @@ function App() {
           <CameraController />
           <color attach="background" args={["#131"]} />
           <ambientLight intensity={0.1} />
-          <directionalLight color="red" position={[0, 0, 5]} />
-          <mesh>
-            <sphereGeometry />
-            <meshStandardMaterial />
-          </mesh>
+          <directionalLight color="white" position={[0, 0, 5]} />
+          <Simulation />
         </Canvas>
       </div>
     </>

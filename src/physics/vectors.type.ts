@@ -1,5 +1,5 @@
-export interface threeDimensionalVector {
-  xCoordinate: number;
-  yCoordinate: number;
-  zCoordinate: number;
+export interface Vector3 {
+  x: number;
+  y: number;
+  z: number;
 }

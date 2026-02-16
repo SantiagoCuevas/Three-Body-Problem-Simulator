@@ -1,8 +1,8 @@
-import type { threeDimensionalVector } from "./vectors.type";
+import type { Vector3 } from "@react-three/fiber";
 
 export interface Body {
-  name: string;
-  size: number;
+  displayName: string;
+  radius: number;
   color: string;
-  position: threeDimensionalVector;
+  position: Vector3;
 }
