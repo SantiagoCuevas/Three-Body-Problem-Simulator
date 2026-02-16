@@ -6,39 +6,30 @@ export const CameraController = () => {
 
   useEffect(() => {
     window.addEventListener("keydown", (e) => {
+      const newPosition = {
+        x: camera.position.x,
+        y: camera.position.y,
+        z: camera.position.z,
+      };
+
       switch (e.key) {
         case "w": {
-          camera.position.set(
-            camera.position.x,
-            camera.position.y,
-            camera.position.z - 1,
-          );
+          newPosition.z -= 1;
           break;
         }
         case "s": {
-          camera.position.set(
-            camera.position.x,
-            camera.position.y,
-            camera.position.z + 1,
-          );
+          newPosition.z += 1;
           break;
         }
         case "a": {
-          camera.position.set(
-            camera.position.x - 1,
-            camera.position.y,
-            camera.position.z,
-          );
+          newPosition.x -= 1;
           break;
         }
         case "d": {
-          camera.position.set(
-            camera.position.x + 1,
-            camera.position.y,
-            camera.position.z,
-          );
+          newPosition.x += 1;
         }
       }
+      camera.position.set(newPosition.x, newPosition.y, newPosition.z);
     });
   }, [camera]);
 
