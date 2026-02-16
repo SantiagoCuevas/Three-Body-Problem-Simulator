@@ -6,12 +6,16 @@ export const Simulation = () => {
       {
         displayName: "Earth",
         radius: 10,
+        mass: 20,
+        velocity: 0,
         color: "blue",
         position: { x: 0, y: 0, z: 0 },
       },
       {
         displayName: "Mars",
         radius: 10,
+        mass: 20,
+        velocity: 0,
         color: "orange",
         position: { x: 30, y: 0, z: 0 },
       },
